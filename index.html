@@ -9,14 +9,14 @@
 <body>
     <header>
         <h1>Indian Expressway Tracker</h1>
-        <p>Complete details of India's major expressways with inauguration & scheme info</p>
+        <p>Track India's major expressways with real-time project details.</p>
     </header>
 
     <section class="search-section">
         <input
             type="text"
             id="searchInput"
-            placeholder="Search by Expressway, State, Scheme..."
+            placeholder="Search by Expressway Name, State, Scheme..."
         />
     </section>
 
@@ -27,71 +27,20 @@
             width="100%"
             height="300"
             style="border: 0;"
+            allowfullscreen=""
             loading="lazy"
         ></iframe>
     </section>
 
     <section class="expressway-list" id="expresswayList">
-        <!-- Expressway card structure -->
-        <div class="expressway-card" data-scheme="Bharatmala" data-state="Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra">
-            <h2>Delhi–Mumbai Expressway</h2>
-            <p><strong>Length:</strong> 1,350 km</p>
-            <p><strong>Status:</strong> Under Construction</p>
-            <p><strong>States Covered:</strong> Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra</p>
-            <p><strong>Inauguration (Expected):</strong> March 2025</p>
-            <p><strong>Scheme:</strong> Bharatmala Pariyojana</p>
-        </div>
-
-        <div class="expressway-card" data-scheme="Bharatmala" data-state="Uttar Pradesh">
-            <h2>Purvanchal Expressway</h2>
-            <p><strong>Length:</strong> 340 km</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>States Covered:</strong> Uttar Pradesh</p>
-            <p><strong>Inauguration:</strong> November 2021</p>
-            <p><strong>Scheme:</strong> Bharatmala Pariyojana</p>
-        </div>
-
-        <div class="expressway-card" data-scheme="Bharatmala" data-state="Uttar Pradesh">
-            <h2>Lucknow–Agra Expressway</h2>
-            <p><strong>Length:</strong> 302 km</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>States Covered:</strong> Uttar Pradesh</p>
-            <p><strong>Inauguration:</strong> January 2017</p>
-            <p><strong>Scheme:</strong> Uttar Pradesh State Project</p>
-        </div>
-
-        <div class="expressway-card" data-scheme="Bharatmala" data-state="Delhi, UP">
-            <h2>Eastern Peripheral Expressway</h2>
-            <p><strong>Length:</strong> 135 km</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>States Covered:</strong> Delhi NCR (Haryana, UP)</p>
-            <p><strong>Inauguration:</strong> May 2018</p>
-            <p><strong>Scheme:</strong> National Capital Region Projects</p>
-        </div>
-
-        <div class="expressway-card" data-scheme="Mumbai–Nagpur Expressway" data-state="Maharashtra">
-            <h2>Samruddhi Mahamarg (Mumbai–Nagpur Expressway)</h2>
-            <p><strong>Length:</strong> 701 km</p>
-            <p><strong>Status:</strong> Partially Open</p>
-            <p><strong>States Covered:</strong> Maharashtra</p>
-            <p><strong>Inauguration (Phase 1):</strong> April 2022</p>
-            <p><strong>Scheme:</strong> Maharashtra Infrastructure Project</p>
-        </div>
-
-        <div class="expressway-card" data-scheme="Yamuna Expressway Industrial Development Authority" data-state="Uttar Pradesh">
-            <h2>Yamuna Expressway</h2>
-            <p><strong>Length:</strong> 165 km</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>States Covered:</strong> Uttar Pradesh</p>
-            <p><strong>Inauguration:</strong> August 2012</p>
-            <p><strong>Scheme:</strong> Yamuna Expressway Industrial Development Authority</p>
-        </div>
+        <!-- Dynamic Expressway Cards will load here via JS -->
     </section>
 
     <footer>
-        <p>Made for Indian infrastructure awareness.</p>
+        <p>Made for Bharat Infrastructure Awareness | Jai Hind 🇮🇳</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
