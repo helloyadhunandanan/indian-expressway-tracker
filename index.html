@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Expressway Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Indian Expressway Tracker</h1>
+        <p>Complete details of India's major expressways with inauguration & scheme info</p>
+    </header>
+
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by Expressway, State, Scheme..."
+        />
+    </section>
+
+    <section class="map-section">
+        <h2>Expressway Map Overview</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.441482149296!2d77.21672117502656!3d28.644800879186038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c995a5450f%3A0x1c4ed11a7e6c4e8e!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1687012339708!5m2!1sen!2sin"
+            width="100%"
+            height="300"
+            style="border: 0;"
+            loading="lazy"
+        ></iframe>
+    </section>
+
+    <section class="expressway-list" id="expresswayList">
+        <!-- Expressway card structure -->
+        <div class="expressway-card" data-scheme="Bharatmala" data-state="Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra">
+            <h2>Delhi–Mumbai Expressway</h2>
+            <p><strong>Length:</strong> 1,350 km</p>
+            <p><strong>Status:</strong> Under Construction</p>
+            <p><strong>States Covered:</strong> Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra</p>
+            <p><strong>Inauguration (Expected):</strong> March 2025</p>
+            <p><strong>Scheme:</strong> Bharatmala Pariyojana</p>
+        </div>
+
+        <div class="expressway-card" data-scheme="Bharatmala" data-state="Uttar Pradesh">
+            <h2>Purvanchal Expressway</h2>
+            <p><strong>Length:</strong> 340 km</p>
+            <p><strong>Status:</strong> Completed</p>
+            <p><strong>States Covered:</strong> Uttar Pradesh</p>
+            <p><strong>Inauguration:</strong> November 2021</p>
+            <p><strong>Scheme:</strong> Bharatmala Pariyojana</p>
+        </div>
+
+        <div class="expressway-card" data-scheme="Bharatmala" data-state="Uttar Pradesh">
+            <h2>Lucknow–Agra Expressway</h2>
+            <p><strong>Length:</strong> 302 km</p>
+            <p><strong>Status:</strong> Completed</p>
+            <p><strong>States Covered:</strong> Uttar Pradesh</p>
+            <p><strong>Inauguration:</strong> January 2017</p>
+            <p><strong>Scheme:</strong> Uttar Pradesh State Project</p>
+        </div>
+
+        <div class="expressway-card" data-scheme="Bharatmala" data-state="Delhi, UP">
+            <h2>Eastern Peripheral Expressway</h2>
+            <p><strong>Length:</strong> 135 km</p>
+            <p><strong>Status:</strong> Completed</p>
+            <p><strong>States Covered:</strong> Delhi NCR (Haryana, UP)</p>
+            <p><strong>Inauguration:</strong> May 2018</p>
+            <p><strong>Scheme:</strong> National Capital Region Projects</p>
+        </div>
+
+        <div class="expressway-card" data-scheme="Mumbai–Nagpur Expressway" data-state="Maharashtra">
+            <h2>Samruddhi Mahamarg (Mumbai–Nagpur Expressway)</h2>
+            <p><strong>Length:</strong> 701 km</p>
+            <p><strong>Status:</strong> Partially Open</p>
+            <p><strong>States Covered:</strong> Maharashtra</p>
+            <p><strong>Inauguration (Phase 1):</strong> April 2022</p>
+            <p><strong>Scheme:</strong> Maharashtra Infrastructure Project</p>
+        </div>
+
+        <div class="expressway-card" data-scheme="Yamuna Expressway Industrial Development Authority" data-state="Uttar Pradesh">
+            <h2>Yamuna Expressway</h2>
+            <p><strong>Length:</strong> 165 km</p>
+            <p><strong>Status:</strong> Completed</p>
+            <p><strong>States Covered:</strong> Uttar Pradesh</p>
+            <p><strong>Inauguration:</strong> August 2012</p>
+            <p><strong>Scheme:</strong> Yamuna Expressway Industrial Development Authority</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made for Indian infrastructure awareness.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
