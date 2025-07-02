@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indian Expressway Tracker</title>
-    <!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Your Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
         <h1>Indian Expressway Tracker</h1>
-        <p>Track India's major expressways with real-time project details.</p>
+        <p>Track India's major expressways with real-time project details, inauguration dates, and scheme info.</p>
     </header>
 
+    <!-- Search Bar -->
     <section class="search-section">
         <input
             type="text"
@@ -23,24 +26,27 @@
         />
     </section>
 
+    <!-- Interactive Leaflet Map -->
     <section class="map-section">
-    <h2>Expressway Interactive Map</h2>
-    <div id="map" style="height: 400px; width: 100%;"></div>
-</section>
+        <h2>Expressway Interactive Map</h2>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </section>
 
-
+    <!-- Expressway Cards (Loaded Dynamically) -->
     <section class="expressway-list" id="expresswayList">
-        <!-- Dynamic Expressway Cards will load here via JS -->
+        <!-- Expressway cards will load here from data.json -->
     </section>
 
     <footer>
         <p>Made for Bharat Infrastructure Awareness | Jai Hind 🇮🇳</p>
     </footer>
 
-    <script src="script.js"></script>
     <!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+    <!-- Your Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
+
 
