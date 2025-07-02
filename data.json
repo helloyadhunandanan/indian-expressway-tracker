@@ -59,4 +59,157 @@
         "latitude": 27.9000,
         "longitude": 77.7000
     }
+    [
+    {
+        "name": "Delhi–Mumbai Expressway",
+        "length": "1,350 km",
+        "status": "Under Construction",
+        "states": "Delhi, Haryana, Rajasthan, Madhya Pradesh, Gujarat, Maharashtra",
+        "inauguration": "Expected 2025",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 24.3975,
+        "longitude": 76.1300
+    },
+    {
+        "name": "Purvanchal Expressway",
+        "length": "340 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "November 2021",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 26.3000,
+        "longitude": 82.8000
+    },
+    {
+        "name": "Lucknow–Agra Expressway",
+        "length": "302 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "November 2016",
+        "scheme": "Uttar Pradesh State Project",
+        "latitude": 26.5000,
+        "longitude": 80.9000
+    },
+    {
+        "name": "Eastern Peripheral Expressway",
+        "length": "135 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh, Haryana",
+        "inauguration": "May 2018",
+        "scheme": "National Capital Region Projects",
+        "latitude": 28.8000,
+        "longitude": 77.3000
+    },
+    {
+        "name": "Samruddhi Mahamarg (Mumbai–Nagpur Expressway)",
+        "length": "701 km",
+        "status": "Partially Open",
+        "states": "Maharashtra",
+        "inauguration": "December 2022 (Phase 1)",
+        "scheme": "Maharashtra Infrastructure Project",
+        "latitude": 20.0000,
+        "longitude": 78.0000
+    },
+    {
+        "name": "Yamuna Expressway",
+        "length": "165 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "August 2012",
+        "scheme": "Yamuna Expressway Industrial Development Authority",
+        "latitude": 27.9000,
+        "longitude": 77.7000
+    },
+    {
+        "name": "Mumbai–Pune Expressway",
+        "length": "94 km",
+        "status": "Completed",
+        "states": "Maharashtra",
+        "inauguration": "2002",
+        "scheme": "State Infrastructure Project",
+        "latitude": 18.8000,
+        "longitude": 73.3000
+    },
+    {
+        "name": "Ganga Expressway",
+        "length": "594 km",
+        "status": "Under Construction",
+        "states": "Uttar Pradesh",
+        "inauguration": "Expected 2025",
+        "scheme": "Uttar Pradesh State Project",
+        "latitude": 26.6000,
+        "longitude": 80.4000
+    },
+    {
+        "name": "Bundelkhand Expressway",
+        "length": "296 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "July 2022",
+        "scheme": "Uttar Pradesh State Project",
+        "latitude": 25.5000,
+        "longitude": 80.5000
+    },
+    {
+        "name": "Chambal Expressway",
+        "length": "404 km",
+        "status": "Planning Stage",
+        "states": "Rajasthan, Madhya Pradesh, Uttar Pradesh",
+        "inauguration": "NA",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 26.5000,
+        "longitude": 77.5000
+    },
+    {
+        "name": "Dwarka Expressway",
+        "length": "29 km",
+        "status": "Under Construction",
+        "states": "Delhi, Haryana",
+        "inauguration": "Expected 2024",
+        "scheme": "National Capital Region Projects",
+        "latitude": 28.5100,
+        "longitude": 77.0400
+    },
+    {
+        "name": "Bangalore–Chennai Expressway",
+        "length": "262 km",
+        "status": "Under Construction",
+        "states": "Karnataka, Andhra Pradesh, Tamil Nadu",
+        "inauguration": "Expected 2025",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 13.0000,
+        "longitude": 79.2000
+    },
+    {
+        "name": "Delhi–Meerut Expressway",
+        "length": "96 km",
+        "status": "Completed",
+        "states": "Delhi, Uttar Pradesh",
+        "inauguration": "April 2021",
+        "scheme": "National Capital Region Projects",
+        "latitude": 28.7500,
+        "longitude": 77.5000
+    },
+    {
+        "name": "Amritsar–Jamnagar Expressway",
+        "length": "1,316 km",
+        "status": "Under Construction",
+        "states": "Punjab, Haryana, Rajasthan, Gujarat",
+        "inauguration": "Expected 2025",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 25.0000,
+        "longitude": 73.0000
+    },
+    {
+        "name": "Raipur–Visakhapatnam Expressway",
+        "length": "464 km",
+        "status": "Under Construction",
+        "states": "Chhattisgarh, Odisha, Andhra Pradesh",
+        "inauguration": "Expected 2025",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 19.5000,
+        "longitude": 82.0000
+    }
+]
+
 ]
