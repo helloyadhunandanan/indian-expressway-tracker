@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.className = 'expressway-card';
                 card.dataset.state = expressway.states.toLowerCase();
                 card.dataset.scheme = expressway.scheme.toLowerCase();
+                card.dataset.status = expressway.status.toLowerCase();
 
                 card.innerHTML = `
                     <h2>${expressway.name}</h2>
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 expresswayList.appendChild(card);
             });
 
-            // Load Expressway Locations on Map after Cards Load
+            // Load Map Markers
             loadMap(data);
         });
 });
@@ -37,18 +38,41 @@ document.getElementById('searchInput').addEventListener('keyup', function () {
         card.style.display = textData.includes(filter) ? 'block' : 'none';
     });
 });
+
+// Filter by Status (All / Completed / Under Construction)
+function filterStatus(statusFilter) {
+    const cards = document.querySelectorAll('.expressway-card');
+
+    cards.forEach(card => {
+        const statusText = card.dataset.status;
+
+        if (statusFilter.toLowerCase() === 'all') {
+            card.style.display = 'block';
+        } else if (statusText.includes(statusFilter.toLowerCase())) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Dark Mode Toggle
+document.getElementById('darkModeToggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Get Marker Color Based on Status
 function getMarkerColor(status) {
     if (status.toLowerCase().includes('completed')) {
-        return 'green';
+        return '00c853'; // Green
     } else if (status.toLowerCase().includes('under construction')) {
-        return 'orange';
+        return 'ff9800'; // Orange
     } else {
-        return 'blue'; // Default for Planning Stage or others
+        return '2196f3'; // Blue (Default)
     }
 }
 
-
-// Initialize Leaflet Map and Add Markers
+// Initialize Leaflet Map and Add Color-Coded Markers
 function loadMap(expressways) {
     const map = L.map('map').setView([22.9734, 78.6569], 5); // Center over India
 
@@ -59,9 +83,16 @@ function loadMap(expressways) {
 
     expressways.forEach(expressway => {
         if (expressway.latitude && expressway.longitude) {
-            L.marker([expressway.latitude, expressway.longitude])
+            const markerIcon = L.icon({
+                iconUrl: `https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|${getMarkerColor(expressway.status)}`,
+                iconSize: [21, 34],
+                iconAnchor: [10, 34],
+                popupAnchor: [0, -34]
+            });
+
+            L.marker([expressway.latitude, expressway.longitude], { icon: markerIcon })
                 .addTo(map)
-                .bindPopup(`<strong>${expressway.name}</strong><br>${expressway.states}`);
+                .bindPopup(`<strong>${expressway.name}</strong><br>${expressway.states}<br>Status: ${expressway.status}`);
         }
     });
 }
