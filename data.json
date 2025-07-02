@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Delhi–Mumbai Expressway",
+        "length": "1,350 km",
+        "status": "Under Construction",
+        "states": "Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra",
+        "inauguration": "March 2025 (Expected)",
+        "scheme": "Bharatmala Pariyojana"
+    },
+    {
+        "name": "Purvanchal Expressway",
+        "length": "340 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "November 2021",
+        "scheme": "Bharatmala Pariyojana"
+    },
+    {
+        "name": "Lucknow–Agra Expressway",
+        "length": "302 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "January 2017",
+        "scheme": "Uttar Pradesh State Project"
+    },
+    {
+        "name": "Eastern Peripheral Expressway",
+        "length": "135 km",
+        "status": "Completed",
+        "states": "Delhi NCR (Haryana, UP)",
+        "inauguration": "May 2018",
+        "scheme": "National Capital Region Projects"
+    },
+    {
+        "name": "Samruddhi Mahamarg (Mumbai–Nagpur Expressway)",
+        "length": "701 km",
+        "status": "Partially Open",
+        "states": "Maharashtra",
+        "inauguration": "April 2022 (Phase 1)",
+        "scheme": "Maharashtra Infrastructure Project"
+    },
+    {
+        "name": "Yamuna Expressway",
+        "length": "165 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "August 2012",
+        "scheme": "Yamuna Expressway Industrial Development Authority"
+    }
+]
