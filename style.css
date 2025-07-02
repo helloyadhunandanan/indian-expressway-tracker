@@ -104,5 +104,27 @@ footer {
     .search-section input {
         width: 95%;
     }
+
+/* Mobile-Friendly Horizontal Scroll (Carousel Style) */
+@media (max-width: 768px) {
+    .expressway-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .expressway-card {
+        min-width: 250px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+    
+    /* Optional smooth scroll on swipe */
+    .expressway-list::-webkit-scrollbar {
+        display: none; /* Hide scrollbar on mobile */
+    }
 }
+
 
