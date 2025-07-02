@@ -1,3 +1,4 @@
+// Load Expressway Data from JSON and Display Cards
 document.addEventListener("DOMContentLoaded", function () {
     fetch('data.json')
         .then(response => response.json())
@@ -20,10 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
                 expresswayList.appendChild(card);
             });
+
+            // Load Expressway Locations on Map after Cards Load
+            loadMap(data);
         });
 });
 
-// Search Functionality
+// Search Filter for Expressway Cards
 document.getElementById('searchInput').addEventListener('keyup', function () {
     const filter = this.value.trim().toLowerCase();
     const cards = document.querySelectorAll('.expressway-card');
@@ -33,3 +37,21 @@ document.getElementById('searchInput').addEventListener('keyup', function () {
         card.style.display = textData.includes(filter) ? 'block' : 'none';
     });
 });
+
+// Initialize Leaflet Map and Add Markers
+function loadMap(expressways) {
+    const map = L.map('map').setView([22.9734, 78.6569], 5); // Center over India
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    expressways.forEach(expressway => {
+        if (expressway.latitude && expressway.longitude) {
+            L.marker([expressway.latitude, expressway.longitude])
+                .addTo(map)
+                .bindPopup(`<strong>${expressway.name}</strong><br>${expressway.states}`);
+        }
+    });
+}
