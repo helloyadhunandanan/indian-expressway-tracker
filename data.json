@@ -47,4 +47,28 @@
         "inauguration": "August 2012",
         "scheme": "Yamuna Expressway Industrial Development Authority"
     }
+    [
+    {
+        "name": "Delhi–Mumbai Expressway",
+        "length": "1,350 km",
+        "status": "Under Construction",
+        "states": "Delhi, Haryana, Rajasthan, MP, Gujarat, Maharashtra",
+        "inauguration": "March 2025 (Expected)",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 24.3975,
+        "longitude": 76.1300
+    },
+    {
+        "name": "Purvanchal Expressway",
+        "length": "340 km",
+        "status": "Completed",
+        "states": "Uttar Pradesh",
+        "inauguration": "November 2021",
+        "scheme": "Bharatmala Pariyojana",
+        "latitude": 26.3000,
+        "longitude": 82.8000
+    }
+    // Add more expressways like this...
+]
+
 ]
