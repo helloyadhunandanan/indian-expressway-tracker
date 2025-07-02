@@ -37,6 +37,16 @@ document.getElementById('searchInput').addEventListener('keyup', function () {
         card.style.display = textData.includes(filter) ? 'block' : 'none';
     });
 });
+function getMarkerColor(status) {
+    if (status.toLowerCase().includes('completed')) {
+        return 'green';
+    } else if (status.toLowerCase().includes('under construction')) {
+        return 'orange';
+    } else {
+        return 'blue'; // Default for Planning Stage or others
+    }
+}
+
 
 // Initialize Leaflet Map and Add Markers
 function loadMap(expressways) {
