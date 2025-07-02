@@ -35,7 +35,7 @@ header p {
 /* Search Section */
 .search-section {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .search-section input {
@@ -45,6 +45,42 @@ header p {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
+}
+
+/* Filter Buttons */
+.filter-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #004d40;
+}
+
+/* Dark Mode Button */
+.theme-toggle {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#darkModeToggle {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #37474f;
+    color: white;
+    cursor: pointer;
 }
 
 /* Map Section */
@@ -99,13 +135,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .search-section input {
-        width: 95%;
-    }
-
-/* Mobile-Friendly Horizontal Scroll (Carousel Style) */
+/* Mobile Horizontal Scroll for Expressway Cards (Carousel Style) */
 @media (max-width: 768px) {
     .expressway-list {
         display: flex;
@@ -120,11 +150,38 @@ footer {
         flex: 0 0 auto;
         scroll-snap-align: start;
     }
-    
-    /* Optional smooth scroll on swipe */
+
     .expressway-list::-webkit-scrollbar {
         display: none; /* Hide scrollbar on mobile */
     }
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .expressway-card {
+    background-color: #1f1f1f;
+    border-color: #333;
+    color: #f1f1f1;
+}
+
+body.dark-mode .search-section input,
+body.dark-mode .filter-section button,
+body.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode #map {
+    filter: grayscale(0.8) brightness(0.8);
+}
 
