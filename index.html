@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indian Expressway Tracker</title>
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharat Expressway Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Indian Expressway Tracker</h1>
-        <p>Track India's major expressways with live project status, inauguration dates, and schemes.</p>
-    </header>
+  <header>
+    <h1>🇮🇳 Bharat Expressway Tracker</h1>
+    <p>Live status & routes of India's mega expressways</p>
+    <button id="darkModeToggle">🌓 Toggle Theme</button>
+  </header>
 
-    <!-- Dark Mode Toggle -->
-    <section class="theme-toggle">
-        <button id="darkModeToggle">Toggle Dark Mode</button>
-    </section>
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search by name, state...">
+    <div class="filters">
+      <button onclick="filterStatus('all')">All</button>
+      <button onclick="filterStatus('Completed')">Completed</button>
+      <button onclick="filterStatus('Under Construction')">Under Construction</button>
+    </div>
+  </section>
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search by Name, State, Scheme..."
-        />
-    </section>
+  <section id="map"></section>
 
-    <!-- Filter Buttons -->
-    <section class="filter-section">
-        <button onclick="filterStatus('all')">Show All</button>
-        <button onclick="filterStatus('Completed')">Completed</button>
-        <button onclick="filterStatus('Under Construction')">Under Construction</button>
-    </section>
+  <section class="expressway-list" id="expresswayList">
+    <!-- Cards will be injected here -->
+  </section>
 
-    <!-- Leaflet Map -->
-    <section class="map-section">
-        <h2>Expressway Map</h2>
-        <div id="map" style="height: 400px; width: 100%;"></div>
-    </section>
+  <footer>
+    <p>Made in 🇮🇳 for Bharat Infra Awareness | Jai Hind</p>
+  </footer>
 
-    <!-- Expressway Cards -->
-    <section class="expressway-list" id="expresswayList">
-        <!-- Dynamic Cards will appear here -->
-    </section>
-
-    <footer>
-        <p>Made for Bharat Infrastructure Awareness | Jai Hind 🇮🇳</p>
-    </footer>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
