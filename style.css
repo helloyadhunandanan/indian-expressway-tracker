@@ -1,187 +1,144 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #212529;
-    line-height: 1.6;
-    padding: 10px;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Header */
 header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #00695c;
-    color: white;
-    border-radius: 8px;
+  background: #138808;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 4px solid #ff9933;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1rem;
-}
-
-/* Search Section */
-.search-section {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.search-section input {
-    width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-/* Filter Buttons */
-.filter-section {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.filter-section button {
-    padding: 8px 12px;
-    margin: 5px;
-    border: none;
-    border-radius: 6px;
-    background-color: #00796b;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filter-section button:hover {
-    background-color: #004d40;
-}
-
-/* Dark Mode Button */
-.theme-toggle {
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 #darkModeToggle {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px;
-    background-color: #37474f;
-    color: white;
-    cursor: pointer;
+  background: #00695c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-/* Map Section */
-.map-section {
-    margin-bottom: 30px;
+.search-filter {
+  padding: 1rem;
+  text-align: center;
+}
+
+#searchInput {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filters button {
+  margin: 8px 4px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #00796b;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
 #map {
-    height: 400px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+  height: 450px;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
-/* Expressway Cards */
 .expressway-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .expressway-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+  min-width: 280px;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  transition: transform 0.2s;
 }
 
 .expressway-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-.expressway-card h2 {
-    color: #00796b;
-    margin-bottom: 10px;
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
-.expressway-card p {
-    font-size: 0.95rem;
-    margin: 5px 0;
+.status.completed {
+  background-color: #2e7d32;
 }
 
-/* Footer */
+.status.under {
+  background-color: #f57c00;
+}
+
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #00695c;
-    color: white;
-    border-radius: 8px;
-    font-size: 0.9rem;
+  background: #138808;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
-/* Mobile Horizontal Scroll for Expressway Cards (Carousel Style) */
-@media (max-width: 768px) {
-    .expressway-list {
-        display: flex;
-        overflow-x: auto;
-        gap: 10px;
-        padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .expressway-card {
-        min-width: 250px;
-        flex: 0 0 auto;
-        scroll-snap-align: start;
-    }
-
-    .expressway-list::-webkit-scrollbar {
-        display: none; /* Hide scrollbar on mobile */
-    }
-}
-
-/* Dark Mode Styles */
+/* Dark Mode */
 body.dark-mode {
-    background-color: #121212;
-    color: #f1f1f1;
+  background: #121212;
+  color: #eee;
 }
 
 body.dark-mode header,
 body.dark-mode footer {
-    background-color: #1e1e1e;
+  background: #1e1e1e;
 }
 
 body.dark-mode .expressway-card {
-    background-color: #1f1f1f;
-    border-color: #333;
-    color: #f1f1f1;
+  background: #1f1f1f;
+  color: #fff;
 }
 
-body.dark-mode .search-section input,
-body.dark-mode .filter-section button,
+body.dark-mode #searchInput,
+body.dark-mode .filters button,
 body.dark-mode #darkModeToggle {
-    background-color: #333;
-    color: #fff;
-    border-color: #555;
+  background: #333;
+  color: #fff;
+  border-color: #555;
 }
 
 body.dark-mode #map {
-    filter: grayscale(0.8) brightness(0.8);
+  filter: grayscale(0.7) brightness(0.9);
 }
-
